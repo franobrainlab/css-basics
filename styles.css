@@ -1,102 +1,99 @@
 html {
-    font-size: 16px; /* početna vrijednost za "rem" veličinu */ 
+  font-size: 16px; /* početna vrijednost za "rem" veličinu */
 }
 
 /* Ovo su stilovi za <body> element i sve unutar njega */
 body {
-    color: red;
-    margin: 0;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 40px;
-    height: 2000px;
+  color: red;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 40px;
+  height: 2000px;
 }
 
 h1 {
-    height: 200px;
-    width: 250px;
-    padding: 30px;
-    margin: 0 0 0 20%;
-    border: 10px solid orange;
-    font-size: 2em;
-    background-color: green;
-    transition: background-color 0.3s, color 1s;
-    position: fixed;
-    top: 0;
-    z-index: 1;
+  height: 200px;
+  width: 250px;
+  padding: 30px;
+  margin: 0 0 0 20%;
+  border: 10px solid orange;
+  font-size: 2em;
+  background-color: green;
+  transition: background-color 0.3s, color 1s;
+  position: fixed;
+  top: 0;
+  z-index: 1;
 }
 
 h1:hover {
-    background-color: pink;
-    color: black;
+  background-color: pink;
+  color: black;
 }
 
-
 span {
-    /* Po default-u je "inline" pa ne vrijedi height i width */
-    display: inline-block; 
-    height: 100px;
-    width: 200px;
-    background-color: pink;
-    text-align: center;
+  /* Po default-u je "inline" pa ne vrijedi height i width */
+  display: inline-block;
+  height: 100px;
+  width: 200px;
+  background-color: pink;
+  text-align: center;
 
-    /* Position - parent treba imat "relative" */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /* Drugi način a isti rezultat */
-    /* position: absolute;
+  /* Position - parent treba imat "relative" */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Drugi način a isti rezultat */
+  /* position: absolute;
     right: 50%;
     bottom: 50%;
-    transform: translate(50%, 50%); */    
+    transform: translate(50%, 50%); */
 }
 
 .box {
-    position: relative;
-    background-color: blue;
-    width: 400px;
-    height: 400px;
-    margin: 50px;
+  position: relative;
+  background-color: blue;
+  width: 400px;
+  height: 400px;
+  margin: 50px;
 }
 
-
 p {
-    position: relative;
+  position: relative;
 }
 
 p::before {
-    content: "";
-    width: 80px;
-    height: 10px;
-    background-color: red;
-    display: inline-block;
-    position: absolute;
-    bottom: 16px;
+  content: "";
+  width: 80px;
+  height: 10px;
+  background-color: red;
+  display: inline-block;
+  position: absolute;
+  bottom: 16px;
 }
 
 input[type="checkbox"]:checked + label {
-    color: blue;
+  color: blue;
 }
 
-
 li:first-child {
-    color: brown;
+  color: brown;
 }
 
 li:last-of-type {
-    color: purple;
+  color: purple;
 }
 
 /* Mobiteli */
 @media screen and (max-width: 768px) {
-    li {
-        color: green;
-    }
+  li {
+    color: green;
+  }
 }
 
 /* Tableti */
 @media screen and (max-width: 1280px) {
-    li {
-        color: black;
-    }
+  li {
+    color: black;
+  }
 }
