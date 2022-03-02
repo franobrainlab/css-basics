@@ -1,39 +1,4 @@
-html {
-  font-size: 16px; /* početna vrijednost za "rem" veličinu */
-}
-
-/* Ovo su stilovi za <body> element i sve unutar njega */
-body {
-  color: red;
-  margin: 0;
-  font-family: "Montserrat", sans-serif;
-  font-size: 40px;
-  height: 2000px;
-}
-
-input,
-textarea,
-button {
-  font-family: "Montserrat", sans-serif;
-}
-
-.navigation {
-  display: flex;
-  flex-direction: row; /* po default-u je "row" */
-  justify-content: center; /* glavna os */
-  align-items: center; /* sporedna os */
-  flex-wrap: wrap; /* prelomi u novi red ako ne može stat */
-  background-color: purple;
-  padding: 20px;
-  height: 300px;
-}
-
-.link {
-  background-color: orange;
-}
-
-.flex-center-both {
-  display: flex;
-  justify-content: center; /* glavna os */
-  align-items: center; /* sporedna os */
-}
+@import "./styles/base.css";
+@import "./styles/link.css";
+@import "./styles/navigation.css";
+@import "./styles/helpers.css";

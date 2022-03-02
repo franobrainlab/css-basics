@@ -1,0 +1,25 @@
+.navigation {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 70px);
+  gap: 20px 30px;
+  background-color: purple;
+  padding: 20px;
+  height: 300px;
+}
+
+.navigation__link {
+  background-color: greenyellow;
+}
+
+.navigation__link--red {
+  background-color: red;
+}
+
+.navigation__link--flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 20px;
+}
