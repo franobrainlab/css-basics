@@ -1,0 +1,26 @@
+.navigation {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 70px);
+  gap: 20px 30px;
+  background-color: purple;
+  padding: 20px;
+  height: 300px;
+
+  @include media($breakpoint-sm, min) {
+    display: none;
+  }
+
+  &__link {
+    background-color: greenyellow;
+
+    &--red {
+      background-color: red;
+    }
+
+    &--flex {
+      @include flex(row-reverse, center, center);
+      gap: 20px;
+    }
+  }
+}
